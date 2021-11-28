@@ -43,7 +43,7 @@ int main()
             repeater("-", term_width);
             nline(1);
             std::cout << "WHAT WILL BE YOUR NEW FILE NAME: (IF FILE NAME WAS 'cancel' THEN THE FILE WON'T EXIST)";
-            nline(1);
+            cl_ui();
             std::cin >> com;
             if(com != "cancel") { create_file(com); }
         }
@@ -55,7 +55,7 @@ int main()
             repeater("-", term_width);
             nline(1);
             std::cout << "WHAT IS YOUR FILE NAME: (IF FILE NAME WAS 'cancel' THEN THE FILE WON'T DELETE)";
-            nline(1);
+            cl_ui();
             std::cin >> ccom;
             if(com != "cancel") { delete_file(ccom); }
         }
@@ -67,7 +67,7 @@ int main()
             repeater("-", term_width);
             nline(1);
             std::cout << "WHAT IS YOUR FILE NAME: (IF FILE NAME WAS 'cancel' THEN THE FILE WON'T WRITE)";
-            nline(1);
+            cl_ui();
             std::cin >> com;
 
             if(com != "cancel")
@@ -87,7 +87,7 @@ int main()
             repeater("-", term_width);
             nline(1);
             std::cout << "WHAT IS YOUR FILE NAME: (IF FILE NAME WAS 'cancel' THEN THE FILE WON'T READ)";
-            nline(1);
+            cl_ui();
             std::cin >> com;
 
             if(com != "cancel")
